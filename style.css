@@ -1,0 +1,17 @@
+body {
+    background-color:lavender;
+}
+h1{
+    text-align: center;
+    color: indigo;
+    font-size: 40px;
+}
+h2{
+    text-align:center;
+    color:mediumpurple;
+    font-size: 30px;
+}
+p{
+    text-align: center;
+    font-weight: 200;
+}

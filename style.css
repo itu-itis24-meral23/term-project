@@ -1,5 +1,9 @@
 body{
     background-color:lavender;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 h1{
     text-align: center;
@@ -44,6 +48,22 @@ pre{
     font-size: 20px;
     font-weight: 300;
 }
-.arrow{
-    font-size: 70px;
+.button {
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: #270434de;
+    color: white;
+    border-radius: 5px;
+    text-align: center; 
+    text-decoration: none;
+    border: 4px dotted white; 
+}
+.button:hover {
+    background-color: #bc78d3;
+    color: #270434de;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4), -6px -6px 16px rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px);
+}
+.empty-space {
+    height: 150px;
 }

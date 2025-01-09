@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(202, 232, 255);
+    background-color: rgb(202, 255, 250);
     margin: 0;
     padding: 0;
 }
 h1 {
-    color: #131c60c1;
+    color:rgb(25, 53, 53);
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
@@ -22,14 +22,14 @@ button {
 
 #reset-button {
     margin-top: 20px;
-    background-color: #121f64;
+    background-color: #063425;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 #submit-button {
-    background-color: #346eac;
+    background-color: #3a9482;
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,8 +45,9 @@ button {
     padding: 20px;
     width: 80%;
     max-width: 400px;
-    border: 2px solid #1b3264;
+    border: 2px solid #1c958d;
     border-radius: 10px;
-    background-color: #afe4fb;
+    background-color: #85ceba;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+

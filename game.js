@@ -12,14 +12,25 @@ const scoreDisplay = document.getElementById("score");
 const livesDisplay = document.getElementById("lives");
 
 function updateDisplay() {
-    wordDisplay.textContent = maskedWord;
+    let displayedWord = '';
+
+    // Maskelenmiş kelimenin her `_` yerine sembol ekliyoruz
+    for (let i = 0; i < word.length; i++) {
+        if (maskedWord[i*2] === "_") { // Maskelenmiş harfler
+            displayedWord += symbol + " ";
+        } else {
+            displayedWord += maskedWord[i*2] + " ";
+        }
+    }
+
+    wordDisplay.innerHTML = displayedWord.trim(); // innerHTML kullanarak sembolü ekliyoruz
     scoreDisplay.textContent = score;
     livesDisplay.textContent = lives;
 }
 
 function checkWinCondition() {
     if (!maskedWord.includes("_")) {
-        alert("Congratulations!You guessed the word correctly.");
+        alert("Congratulations! You guessed the word correctly.");
         gameOver = true;
     }
 }
@@ -53,8 +64,8 @@ function checkGuess(guess) {
         }
     } else if (guess.length === word.length) {
         if (guess === word) {
-            score = 100; 
-            maskedWord = word.split("").join(" "); 
+            score = 100;
+            maskedWord = word.split("").join(" ");
             alert("Congratulations! You guessed the correct word!");
             gameOver = true;
         } else {

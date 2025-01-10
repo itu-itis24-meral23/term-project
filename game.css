@@ -42,10 +42,9 @@ button {
     border: 10px dotted #1c958d;
     border-radius: 10px;
     background-color: #85ceba;
-    margin: 50px auto;
-    padding: 100px;
-    width: 75%;
-    max-width: 400px;
+    margin: 70px auto;
+    padding: 70px;
+    width: 45%;
 }
 #score-lives-container {
     width: 100%;
@@ -53,8 +52,21 @@ button {
     margin-bottom: 10px;
 }
 #lives {
-    display: inline-block;
+    display: inline-blockflex;
     width: 70px;
     text-align: left;
 }
-
+.letter-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid #000;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+}
+img {
+    width: 100px;
+    height: 100px;
+}

@@ -11,9 +11,34 @@ const submitButton = document.getElementById("submit-button");
 const resetButton = document.getElementById("reset-button");
 const scoreDisplay = document.getElementById("score");
 const livesDisplay = document.getElementById("lives");
+const svgFiles = {
+    B: "B_inkspace.svg",
+    L: "L_inkspace.svg",
+    A: "A_inkspace.svg",
+    S: "S_inkspace.svg",
+    T: "T_inkspace.svg",
+};
 
 function updateDisplay() {
-    wordDisplay.textContent = maskedWord;
+    wordDisplay.innerHTML = '';
+    for (let i = 0; i < word.length; i++) {
+        const letter = word[i];
+        const guessed = guessedLetters.includes(letter);
+
+        const letterContainer = document.createElement("span");
+        if (guessed) {
+            const svgImage = document.createElement("img");
+            svgImage.src = svgFiles[letter];
+            svgImage.alt = letter;
+            letterContainer.appendChild(svgImage);
+        } else {
+            letterContainer.textContent = " ";
+            letterContainer.classList.add("letter-box");
+        }
+        
+        wordDisplay.appendChild(letterContainer);
+        wordDisplay.appendChild(document.createTextNode(" "));
+    }
     scoreDisplay.textContent = score;
     livesDisplay.innerHTML = "💜".repeat(lives);
 }

@@ -3,6 +3,7 @@ let maskedWord = "_ ".repeat(word.length).trim();
 let score = 0;
 let lives = 3;
 let gameOver = false;
+let guessedLetters = [];
 
 const wordDisplay = document.getElementById("word-display");
 const guessInput = document.getElementById("guess-input");
@@ -34,7 +35,10 @@ function checkGuess(guess) {
         alert("Please enter a letter or word!");
         return;
     }
-
+    if (guessedLetters.includes(guess)) {
+        alert("This letter has already been guessed!");
+        return;
+    }
     if (guess.length === 1) {
         let correctGuess = false;
         const updatedWord = maskedWord.split(" ");
@@ -51,6 +55,7 @@ function checkGuess(guess) {
         } else {
             lives--;
         }
+        guessedLetters.push(guess);
     } else if (guess.length === word.length) {
         if (guess === word) {
             score = 100; 
@@ -86,6 +91,7 @@ resetButton.addEventListener("click", () => {
     score = 0;
     lives = 3;
     gameOver = false;
+    guessedLetters = [];
     updateDisplay();
 });
 

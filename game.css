@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: rgb(202, 255, 250);
-    margin: 0;
-    padding: 0;
 }
 h1 {
     color:rgb(25, 53, 53);
@@ -41,14 +39,13 @@ button {
     letter-spacing: 10px;
 }
 #game-container {
-    margin: 50px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 400px;
-    border: 2px solid #1c958d;
+    border: 10px dotted #1c958d;
     border-radius: 10px;
     background-color: #85ceba;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 100px;
+    width: 75%;
+    max-width: 400px;
 }
 #score-lives-container {
     width: 100%;
@@ -58,5 +55,6 @@ button {
 #lives {
     display: inline-block;
     width: 70px;
-    text-align: right;
+    text-align: left;
 }
+

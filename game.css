@@ -9,8 +9,8 @@ h1 {
     font-size: 40px;
 }
 input, button {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 13px 0;
+    padding: 13px;
     font-size: 16px;
 }
 
@@ -32,18 +32,23 @@ button {
     border: none;
     border-radius: 5px;
 }
-
+#submit-button, #reset-button {
+    margin: 10px 0;
+}
 #word-display {
     font-size: 25px;
     margin-bottom: 20px;
     letter-spacing: 10px;
 }
 #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 10px dotted #1c958d;
     border-radius: 10px;
     background-color: #85ceba;
-    margin: 70px auto;
-    padding: 70px;
+    margin: 65px auto;
+    padding: 65px;
     width: 45%;
 }
 #score-lives-container {
@@ -52,7 +57,7 @@ button {
     margin-bottom: 10px;
 }
 #lives {
-    display: inline-blockflex;
+    display: inline-block;
     width: 70px;
     text-align: left;
 }

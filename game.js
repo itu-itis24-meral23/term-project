@@ -85,7 +85,6 @@ function checkGuess(guess) {
         if (guess === word) {
             score = 100; 
             maskedWord = word.split("").join(" "); 
-            alert("Congratulations! You guessed the correct word!");
             gameOver = true;
         } else {
             lives = 0;

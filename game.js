@@ -85,7 +85,13 @@ submitButton.addEventListener("click", () => {
     guessInput.value = "";
     checkGuess(guess);
 });
-
+guessInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        const guess = guessInput.value.toUpperCase().trim();
+        guessInput.value = "";
+        checkGuess(guess);
+    }
+});
 resetButton.addEventListener("click", () => {
     maskedWord = "_ ".repeat(word.length).trim();
     score = 0;

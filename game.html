@@ -7,14 +7,16 @@
     </head>
     <body>
         <h1>Word Prediction Game</h1>
-    <div id="game-container">
-        <div id="word-display">_ _ _ _ _</div>
-        <input type="text" id="guess-input" placeholder="Guess a letter or word">
-        <button id="submit-button">Submit</button>
-        <p>Score: <span id="score">0</span></p>
-        <p>Lives: <span id="lives">3</span></p>
-        <button id="reset-button">Reset Game</button>
-    </div>
+        <div id="game-container">
+            <div id="word-display">_ _ _ _ _</div>
+            <input type="text" id="guess-input" placeholder="Guess a letter or word">
+            <button id="submit-button">Submit</button>
+            <div id="score-lives-container">
+                <p>Score: <span id="score">0</span></p>
+                <p>Lives: <span id="lives"></span></p>
+            </div>
+            <button id="reset-button">Reset Game</button>
+        </div>
     <script src="game.js"></script>
     </body>
 </html>

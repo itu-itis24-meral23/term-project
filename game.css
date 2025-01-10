@@ -50,4 +50,13 @@ button {
     background-color: #85ceba;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+#score-lives-container {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+#lives {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}

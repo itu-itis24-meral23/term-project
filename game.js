@@ -14,7 +14,7 @@ const livesDisplay = document.getElementById("lives");
 function updateDisplay() {
     wordDisplay.textContent = maskedWord;
     scoreDisplay.textContent = score;
-    livesDisplay.textContent = lives;
+    livesDisplay.innerHTML = "💜".repeat(lives);
 }
 
 function checkWinCondition() {

@@ -4,16 +4,26 @@ body {
     background-color:rgb(230, 212, 238);
 }
 h1 {
-    color:rgba(67, 31, 20, 0.78);
+    color:rgba(67, 31, 20, 0.855);
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
+    border-color: #3e1f0d;
+    border-style: double;
+    background-color: beige;
+    width: 35%;
+    padding: 8px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 input, button {
     margin: 13px 0;
     padding: 13px;
     font-size: 16px;
     border-radius: 8px;
-    border-color:burlywood;
+    border-color:rgb(87, 43, 20);
 }
 #input-container {
     display: flex;
@@ -22,6 +32,8 @@ input, button {
 #input-label {
     font-size: 20px;
     margin-right: 10px;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 button {
     cursor: pointer;
@@ -32,12 +44,24 @@ button {
     background-color:rgb(71, 29, 19);
     color: white;
     border-radius: 8px;
+    border-color:  rgb(211, 142, 112);
+}
+#reset-button:hover {
+    background-color: white;
+    color: #3e1f0d;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 #submit-button {
     background-color: rgb(211, 142, 112);
     color: white;
+    border-color: #3e1f0d;
     border-radius: 8px;
+}
+#submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(211, 142, 112);
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
 }
 #submit-button, #reset-button {
     margin: 10px 0;
@@ -51,18 +75,21 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px dotted rgb(71, 29, 19);
+    border-width: 8px;
+    border-color: rgb(71, 29, 19);
+    border-style:dotted;
     border-radius: 10px;
     background-color:beige;
-    margin: 65px auto;
-    padding: 65px;
-    width: 45%;
+    margin: 50px auto;
+    padding: 50px;
+    width: 60%;
 }
 #score-lives-container {
     width: 100%;
     text-align: right;
     margin-bottom: 10px;
     font-size: 20px;
+    color:rgb(117, 53, 28);
 }
 #lives {
     display: inline-block;
@@ -91,3 +118,4 @@ img {
 .incorrect {
     background-color: #e88b84;
 }
+

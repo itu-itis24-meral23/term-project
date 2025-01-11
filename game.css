@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(202, 255, 250);
+    background-color: rgb(124, 238, 246);
 }
 h1 {
     color:rgb(25, 53, 53);
@@ -82,4 +82,11 @@ button {
 img {
     width: 100px;
     height: 100px;
+}
+.correct {
+    background-color: #88e58b;
+}
+
+.incorrect {
+    background-color: #ea1809;
 }

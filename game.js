@@ -40,7 +40,7 @@ function updateDisplay() {
         wordDisplay.appendChild(document.createTextNode(" "));
     }
     scoreDisplay.textContent = score;
-    livesDisplay.innerHTML = "🤎".repeat(lives);
+    livesDisplay.innerHTML = "💜".repeat(lives);
 }
 
 function checkWinCondition() {
@@ -49,7 +49,7 @@ function checkWinCondition() {
         updateDisplay();
         setTimeout(() => {
             alert("Congratulations! You guessed the word correctly.");
-        }, 120);
+        }, 150);
     }
 }
 
@@ -101,14 +101,16 @@ function checkGuess(guess) {
             }
             setTimeout(() => {
                 alert("Congratulations!");
-            }, 140);
+            }, 150);
         } else {
             lives = 0;
-            alert("You entered the wrong word! You lost the game.");
             gameOver = true;
             updateDisplay();
             document.body.classList.add("incorrect");
             document.body.classList.remove("correct");
+            setTimeout(() => {
+                alert("You entered the wrong word! You lost the game.");
+            }, 150);
         }
     } else {
         alert("Invalid input! Please enter 1 character for a letter guess or the full length for a word guess.");
@@ -121,7 +123,7 @@ function checkGuess(guess) {
         updateDisplay();
         setTimeout(() => {
             alert("You have run out of attempts! You lost the game.");
-        }, 120);
+        }, 150);
     }
     checkWinCondition();
 }

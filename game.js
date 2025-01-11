@@ -107,7 +107,7 @@ function checkGuess(guess) {
                 guessedLetters.push(word[i]);
             }
             setTimeout(() => {
-                alert("CONGRATULATONS!You’re great at this game.");
+                alert("CONGRATULATIONS!You’re great at this game.");
             }, 150);
         } else {
             lives = 0;

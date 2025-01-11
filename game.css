@@ -68,6 +68,7 @@ button {
     display: inline-block;
     width: 70px;
     text-align: left;
+    white-space: nowrap;
 }
 .letter-box {
     display: inline-block;

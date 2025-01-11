@@ -44,9 +44,12 @@ function updateDisplay() {
 }
 
 function checkWinCondition() {
-    if (!maskedWord.includes("_")) {
-        alert("Congratulations!You guessed the word correctly.");
+    if (!maskedWord.includes("_") && !gameOver) {
         gameOver = true;
+        updateDisplay();
+        setTimeout(() => {
+            alert("Congratulations! You guessed the word correctly.");
+        }, 100);
     }
 }
 
@@ -84,7 +87,8 @@ function checkGuess(guess) {
     } else if (guess.length === word.length) {
         if (guess === word) {
             score = 100; 
-            maskedWord = word.split("").join(" "); 
+            maskedWord = word.split("").join(" ");
+            updateDisplay();
             gameOver = true;
         } else {
             lives = 0;
@@ -98,8 +102,11 @@ function checkGuess(guess) {
 
     updateDisplay();
     if (lives <= 0 && !gameOver) {
-        alert("You have run out of attempts! You lost the game.");
         gameOver = true;
+        updateDisplay();
+        setTimeout(() => {
+            alert("You have run out of attempts! You lost the game.");
+        }, 100);
     }
     checkWinCondition();
 }

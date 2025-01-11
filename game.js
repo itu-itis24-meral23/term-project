@@ -145,6 +145,8 @@ resetButton.addEventListener("click", () => {
     gameOver = false;
     guessedLetters = [];
     updateDisplay();
+    document.body.classList.remove("correct", "incorrect");
+    document.body.style.backgroundColor = "";
 });
 
 updateDisplay();

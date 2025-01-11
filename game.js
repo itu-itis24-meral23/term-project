@@ -48,7 +48,7 @@ function checkWinCondition() {
         gameOver = true;
         updateDisplay();
         setTimeout(() => {
-            alert("Congratulations! You guessed the word correctly.");
+            alert("CONGRATULATIONS! YOU WON THE GAME!");
         }, 150);
     }
 }
@@ -100,7 +100,7 @@ function checkGuess(guess) {
                 guessedLetters.push(word[i]);
             }
             setTimeout(() => {
-                alert("Congratulations!");
+                alert("CONGRATULATONS!You’re great at this game.");
             }, 150);
         } else {
             lives = 0;
@@ -109,11 +109,11 @@ function checkGuess(guess) {
             document.body.classList.add("incorrect");
             document.body.classList.remove("correct");
             setTimeout(() => {
-                alert("You entered the wrong word! You lost the game.");
+                alert("You entered the wrong word! GAME OVER!.");
             }, 150);
         }
     } else {
-        alert("Invalid input! Please enter 1 character for a letter guess or the full length for a word guess.");
+        alert("INVALID INPUT! Please enter one letter or word.");
         return;
     }
 
@@ -122,7 +122,7 @@ function checkGuess(guess) {
         gameOver = true;
         updateDisplay();
         setTimeout(() => {
-            alert("You have run out of attempts! You lost the game.");
+            alert("You have run out of attempts! GAME OVER!");
         }, 150);
     }
     checkWinCondition();

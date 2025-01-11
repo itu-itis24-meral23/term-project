@@ -18,6 +18,13 @@ const svgFiles = {
     S: "S_inkspace.svg",
     T: "T_inkspace.svg",
 };
+const preloadSVG = (src) => {
+    const img = new Image();
+    img.src = src;
+};
+
+Object.values(svgFiles).forEach(preloadSVG);
+
 
 function updateDisplay() {
     wordDisplay.innerHTML = '';

@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(124, 238, 246);
+    background-color:rgb(230, 212, 238);
 }
 h1 {
-    color:rgb(25, 53, 53);
+    color:rgba(67, 31, 20, 0.78);
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
@@ -12,6 +12,8 @@ input, button {
     margin: 13px 0;
     padding: 13px;
     font-size: 16px;
+    border-radius: 8px;
+    border-color:burlywood;
 }
 #input-container {
     display: flex;
@@ -27,17 +29,15 @@ button {
 
 #reset-button {
     margin-top: 20px;
-    background-color: #063425;
+    background-color:rgb(71, 29, 19);
     color: white;
-    border: none;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 #submit-button {
-    background-color: #3a9482;
+    background-color: rgb(211, 142, 112);
     color: white;
-    border: none;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 #submit-button, #reset-button {
     margin: 10px 0;
@@ -51,9 +51,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px dotted #1c958d;
+    border: 10px dotted rgb(71, 29, 19);
     border-radius: 10px;
-    background-color: #85ceba;
+    background-color:beige;
     margin: 65px auto;
     padding: 65px;
     width: 45%;
@@ -84,9 +84,9 @@ img {
     height: 100px;
 }
 .correct {
-    background-color: #88e58b;
+    background-color: #bceabd;
 }
 
 .incorrect {
-    background-color: #ea1809;
+    background-color: #e88b84;
 }

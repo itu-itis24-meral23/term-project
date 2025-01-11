@@ -40,7 +40,7 @@ function updateDisplay() {
         wordDisplay.appendChild(document.createTextNode(" "));
     }
     scoreDisplay.textContent = score;
-    livesDisplay.innerHTML = "💜".repeat(lives);
+    livesDisplay.innerHTML = "🤎".repeat(lives);
 }
 
 function checkWinCondition() {

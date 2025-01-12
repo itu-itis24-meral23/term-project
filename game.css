@@ -9,6 +9,7 @@ h1 {
     font-size: 40px;
     border-color: #3e1f0d;
     border-style: double;
+    border-radius: 8px;
     background-color: beige;
     width: 35%;
     padding: 8px;
@@ -78,11 +79,11 @@ button {
     border-width: 8px;
     border-color: rgb(71, 29, 19);
     border-style:dotted;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color:beige;
     margin: 50px auto;
     padding: 50px;
-    width: 60%;
+    width: 65%;
 }
 #score-lives-container {
     width: 100%;
@@ -101,7 +102,7 @@ button {
     display: inline-block;
     width: 100px;
     height: 100px;
-    border: 1.5px solid #000;
+    border: 1.5px solid rgb(114, 57, 26);
     background-color: white;
     text-align: center;
     line-height: 30px;
